@@ -338,7 +338,7 @@ public class ApiBuilder {
      * @see <a href="https://javalin.io/documentation#handlers">Handlers in docs</a>
      */
     public static void before(@NotNull Handler handler) {
-        staticInstance().before(prefixPath("/*"), handler);
+        staticInstance().before(prefixPath("*"), handler);
     }
 
     /**
